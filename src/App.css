@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/* init */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(3, 0, 31);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  width: 252px;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  transition: left 0.5s linear;
+}
+
+.main {
+  transition: width 0.5s linear;
+}
+
+.main-w1 {
+  width: calc(100% - 252px);
+}
+
+.main-w2 {
+  width: calc(100% - 0px);
+}
+
+.upperSide {
+  height: 70%;
+}
+
+.midBtn {
+  background-color: #5a4bff;
+  width: 23rem;
+}
+
+.midBtn:hover {
+  background-color: #4638e0;
+}
+
+.query {
+  border: 1px solid rgba(98, 98, 98, 1);
+  color: rgba(222, 222, 222, 1);
+}
+
+.main {
+  min-height: calc(100vh -14rem);
+}
+
+.inp {
+  background-color: rgba(25, 30, 58, 1);
+}
+.inp input {
+  width: calc(100% - 3rem);
+}
+
+.chatBox {
+  height: 500px;
+}
+
+.bot {
+  background-color: rgba(28, 30, 58, 1);
+}
+
+.botTxt {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.txtColor {
+  color: #d1d5db;
+}
+
+.preLogo {
+  animation: rot 1.5s linear 1 forwards;
+  -webkit-animation: rot 1.5s linear 1 forwards;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1000deg);
+  }
+}
+
+.send img:hover {
+  transform: scale(1.2);
+  filter: invert(62%) sepia(27%) saturate(367%) hue-rotate(115deg)
+    brightness(96%) contrast(87%);
+  -webkit-filter: invert(62%) sepia(27%) saturate(367%) hue-rotate(115deg)
+    brightness(96%) contrast(87%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.counter div {
+  background-color: #9a9a9a;
+}
+
+.counter:hover .line-up {
+  transform: rotate(45deg) translateY(5px);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.counter:hover .line-down {
+  transform: rotate(-45deg) translateY(-5px);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.hideSide {
+  left: -50%;
+}
+
+.line-0 {
+  left: 17px;
+}
+
+.line-270 {
+  left: 265px;
+}
+
+.line {
+  transition: left 0.5s linear;
+}
+
+.menu-icon {
+  font-size: 23px;
+  transition: left 0.5s linear;
+}
+
+@media (max-width: 800px) {
+  .line {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .inp {
+    width: 90%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .chatRecive {
+    width: 46rem;
+  }
+}

@@ -8,7 +8,7 @@ export default function GetPrompt(userPrompt) {
     url: "https://open-ai21.p.rapidapi.com/conversationgpt35",
     headers: {
       "content-type": "application/json",
-      "X-RapidAPI-Key": "c2679c1036msh2f39ad710c80ee9p148ebejsnc902b1dfda14",
+      "X-RapidAPI-Key": "667125954cmshd591f803ef390f9p1a2e48jsnf5cf272970d6",
       "X-RapidAPI-Host": "open-ai21.p.rapidapi.com",
     },
     data: {

@@ -34,7 +34,7 @@ export default function SideBar() {
 
       <aside
         className={`sidebar z-30 bg-slate-900 border-r border-r-gray-800 border-solid px-4 ${
-          layout ? "-left-2/4" : "left-0"
+          layout ? "-left-3/4" : "left-0"
         }`}
       >
         <div className="upperSide border-b border-b-gray-800 border-solid">
